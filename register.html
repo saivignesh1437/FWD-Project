@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KLH EVENT</title>
+
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body class="register">
+
+<header>
+    <nav>
+        <h1 onclick="scrollTopPage()" style="cursor:pointer;">IVARNA 2026</h1>
+        <ul>
+            <li><a href="Project2.html">Home</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+        <button class="btn" id="themeBtn" onclick="toggleTheme()">🌙</button>
+    </nav>
+</header>
+
+<!-- form  -->
+    <section id="register">
+        <h1>Event Registration Form</h1>
+
+        <form id="eventForm">
+            <fieldset class="fieldset">
+                <legend>Full Name</legend>
+                <input type="text" id="name" required minlength="3" placeholder="Enter your name">
+            </fieldset>
+        
+            <fieldset class="fieldset">
+                <legend>Email</legend>
+                <input type="email" id="email" required placeholder="example@gmail.com">
+            </fieldset>
+        
+            <fieldset class="fieldset">
+                <legend>Phone Number</legend>
+                <input type="tel" id="phone" pattern="[0-9]{10}" required placeholder="10-digit phone number">
+            </fieldset>
+
+            <label for="ticket"><b>Ticket Type</b></label>
+            <select id="ticket">
+                <option>Standard</option>
+                <option>Premium</option>
+            </select>
+
+            <label><b>Mode of Attendance</b></label>
+
+            <label class="radio-option">
+                ONLINE<input type="radio" name="mode" value="online" required>
+            </label>
+
+            <label class="radio-option">
+                OFLINE<input type="radio" name="mode" value="offline" required>
+            </label>
+
+            <label class="checkbox-option">
+                <b>I agree to the terms & conditions</b>
+                <input type="checkbox" required>
+            </label>
+
+            <input type="submit" value="Register">
+        </form>
+    </section>
+
+    <div id="modal">
+        <div id="modalContent">
+            <h2>Registration Successful 🎉</h2>
+            <p id="modalText"></p>
+            <button onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+<button id="topBtn" onclick="scrollTopPage()">⬆</button>
+
+<footer>
+    <p> &copy; IVARNA 2026  | All Rights Reserved</p>
+</footer>
+
+<script src="project.js"></script>
+</body>
+</html>

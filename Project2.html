@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KLH EVENT</title>
+
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h1 onclick="scrollTopPage()" style="cursor:pointer;">IVARNA 2026</h1>
+        <ul>
+            <li><a href="Project2.html">Home</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+        <button class="btn" id="themeBtn" onclick="toggleTheme()">🌙</button>
+    </nav>
+</header>
+
+<div class="announcement">
+    <span>⚡️ Register Now! Limited seats available – Event starts soon. The countdown is ticking! ⚡️</span>
+</div>
+
+<main>
+
+    <!-- event info -->
+    <section id="about">
+        <h2>About the Event</h2>
+        <article>
+            <p>
+                <b>IVARNA</b> is the annual techno-management, sports, and cultural fest organized by <b>KLH University Hyderabad</b>, usually featuring a mix of technical competitions, workshops, and cultural performances. The event showcases student innovation, with recent editions including themes like "Explore" and various competitions designed to foster skill development. 
+            </p>
+            
+            <!-- image -->
+            <a href="https://www.instagram.com/ivarna_klh/" target="_blank">
+                <img src = "images/ivarna_13_11zon.jpg"
+                 alt="Event Banner"
+                 width="50%">
+            </a>
+
+            <!-- iframe  -->
+            <iframe class="iframe"
+                src="https://www.youtube.com/embed/Tq7ec_yGWYk"
+                allowfullscreen>
+            </iframe>
+        </article>
+
+        <!-- audio1 -->
+        <audio controls>
+        <source src="audio/Rick-Roll-Sound-Effect.mp3" type="audio/mpeg">
+        </audio>
+
+        <!-- audio2 -->
+        <audio controls muted>
+        <source src="audio/fahhhhh.mp3" type="audio/mpeg">
+        </audio>
+
+    </section>
+
+    <!-- aside  -->
+    <aside>
+        <h3>Event Countdown</h3>
+        <div id="countdown">
+            <div class="time-box">
+                <span id="days">0</span>
+                <small>Days</small>
+            </div>
+            <div class="time-box">
+                <span id="hours">0</span>
+                <small>Hours</small>
+            </div>
+            <div class="time-box">
+                <span id="minutes">0</span>
+                <small>Minutes</small>
+            </div>
+            <div class="time-box">
+                <span id="seconds">0</span>
+                <small>Seconds</small>
+            </div>
+        </div>
+        
+        <h3>Event Highlights</h3>
+        <ul>
+            <li>Technical Events</li>
+            <li>Tradition day</li>
+            <li>Esports</li>
+            <li>Cultural Event</li>
+            <li>Live Performances</li>
+            <li>Celebrity visits</li>
+            <li>DJ</li>
+            
+        </ul>
+
+        <!-- video -->
+        <video controls>
+        <source src="videos/Video-566.mp4" type="video/mp4">
+        </video>
+
+        <h3>Location</h3>
+        <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d487463.66482034395!2d77.73025738906252!3d17.3488156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb959fee5b3bad%3A0x294b001a89bbce8f!2sKL%20University%20Aziz%20Nagar%20Hyderabad!5e0!3m2!1sen!2sin!4v1771650653715!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <h3>Event Details</h3>
+        <p><b>Date:</b> March 07, 2026</p>
+        <p><b>Time:</b> 05:00 PM</p>
+        <p><b>Venue:</b> KLH GROUND</p>
+
+        <h3>Follow Us</h3>
+        <ul>
+        <li><a href="https://www.instagram.com/ivarna_klh/" target="_blank">Instagram</a></li>
+        <li><a href="https://www.youtube.com/channel/UCE55ePd6uS-lSGDaKitf4Ig" target="_blank">YouTube</a></li>
+        <li><a href="https://x.com/klhuniversity" target="_blank">Twitter</a></li>
+        </ul>
+
+    </aside>
+
+</main>
+
+<div id="modal">
+    <div id="modalContent">
+        <h2>Registration Successful 🎉</h2>
+        <p id="modalText"></p>
+    <button onclick="closeModal()">Close</button>
+    </div>
+</div>
+
+<button id="topBtn" onclick="scrollTopPage()">⬆️</button>
+
+<footer>
+    <p> &copy; IVARNA 2026  | All Rights Reserved</p>
+</footer>
+
+<script src="project.js"></script>
+
+</body>
+</html>
